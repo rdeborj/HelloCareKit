@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		61D5EEF021FF301400CDFA4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D5EEEF21FF301400CDFA4E /* AppDelegate.swift */; };
-		61D5EEF221FF301400CDFA4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D5EEF121FF301400CDFA4E /* ViewController.swift */; };
 		61D5EEF521FF301400CDFA4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D5EEF321FF301400CDFA4E /* Main.storyboard */; };
 		61D5EEF721FF301500CDFA4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D5EEF621FF301500CDFA4E /* Assets.xcassets */; };
 		61D5EEFA21FF301500CDFA4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D5EEF821FF301500CDFA4E /* LaunchScreen.storyboard */; };
 		61D5EF0521FF301500CDFA4E /* HelloCareKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D5EF0421FF301500CDFA4E /* HelloCareKitTests.swift */; };
+		61D5EF2321FF4B3A00CDFA4E /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D5EF2021FF4B3000CDFA4E /* CareKit.framework */; };
+		61D5EF2421FF4B3A00CDFA4E /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61D5EF2021FF4B3000CDFA4E /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		61D5EF4921FF764D00CDFA4E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D5EF4821FF764D00CDFA4E /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,60 @@
 			remoteGlobalIDString = 61D5EEEB21FF301400CDFA4E;
 			remoteInfo = HelloCareKit;
 		};
+		61D5EF1521FF4B1700CDFA4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61D5EF0F21FF4B1700CDFA4E /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		61D5EF1721FF4B1700CDFA4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61D5EF0F21FF4B1700CDFA4E /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
+			remoteInfo = CareKitTests;
+		};
+		61D5EF1F21FF4B3000CDFA4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61D5EF1921FF4B3000CDFA4E /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		61D5EF2121FF4B3000CDFA4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61D5EF1921FF4B3000CDFA4E /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
+			remoteInfo = CareKitTests;
+		};
+		61D5EF2521FF4B3A00CDFA4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61D5EF1921FF4B3000CDFA4E /* CareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61D5EF2721FF4B3A00CDFA4E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				61D5EF2421FF4B3A00CDFA4E /* CareKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		61D5EEEC21FF301400CDFA4E /* HelloCareKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCareKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D5EEEF21FF301400CDFA4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		61D5EEF121FF301400CDFA4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61D5EEF421FF301400CDFA4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61D5EEF621FF301500CDFA4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61D5EEF921FF301500CDFA4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +86,9 @@
 		61D5EF0021FF301500CDFA4E /* HelloCareKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloCareKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D5EF0421FF301500CDFA4E /* HelloCareKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCareKitTests.swift; sourceTree = "<group>"; };
 		61D5EF0621FF301500CDFA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61D5EF0F21FF4B1700CDFA4E /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../../CareKit/CareKit.xcodeproj; sourceTree = "<group>"; };
+		61D5EF1921FF4B3000CDFA4E /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../CareKit/CareKit.xcodeproj; sourceTree = "<group>"; };
+		61D5EF4821FF764D00CDFA4E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61D5EF2321FF4B3A00CDFA4E /* CareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +113,7 @@
 		61D5EEE321FF301400CDFA4E = {
 			isa = PBXGroup;
 			children = (
+				61D5EF1921FF4B3000CDFA4E /* CareKit.xcodeproj */,
 				61D5EEEE21FF301400CDFA4E /* HelloCareKit */,
 				61D5EF0321FF301500CDFA4E /* HelloCareKitTests */,
 				61D5EEED21FF301400CDFA4E /* Products */,
@@ -77,8 +132,9 @@
 		61D5EEEE21FF301400CDFA4E /* HelloCareKit */ = {
 			isa = PBXGroup;
 			children = (
+				61D5EF0F21FF4B1700CDFA4E /* CareKit.xcodeproj */,
 				61D5EEEF21FF301400CDFA4E /* AppDelegate.swift */,
-				61D5EEF121FF301400CDFA4E /* ViewController.swift */,
+				61D5EF4821FF764D00CDFA4E /* TabBarController.swift */,
 				61D5EEF321FF301400CDFA4E /* Main.storyboard */,
 				61D5EEF621FF301500CDFA4E /* Assets.xcassets */,
 				61D5EEF821FF301500CDFA4E /* LaunchScreen.storyboard */,
@@ -96,6 +152,24 @@
 			path = HelloCareKitTests;
 			sourceTree = "<group>";
 		};
+		61D5EF1021FF4B1700CDFA4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61D5EF1621FF4B1700CDFA4E /* CareKit.framework */,
+				61D5EF1821FF4B1700CDFA4E /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61D5EF1A21FF4B3000CDFA4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61D5EF2021FF4B3000CDFA4E /* CareKit.framework */,
+				61D5EF2221FF4B3000CDFA4E /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +180,12 @@
 				61D5EEE821FF301400CDFA4E /* Sources */,
 				61D5EEE921FF301400CDFA4E /* Frameworks */,
 				61D5EEEA21FF301400CDFA4E /* Resources */,
+				61D5EF2721FF4B3A00CDFA4E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				61D5EF2621FF4B3A00CDFA4E /* PBXTargetDependency */,
 			);
 			name = HelloCareKit;
 			productName = HelloCareKit;
@@ -164,6 +240,16 @@
 			mainGroup = 61D5EEE321FF301400CDFA4E;
 			productRefGroup = 61D5EEED21FF301400CDFA4E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 61D5EF1A21FF4B3000CDFA4E /* Products */;
+					ProjectRef = 61D5EF1921FF4B3000CDFA4E /* CareKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 61D5EF1021FF4B1700CDFA4E /* Products */;
+					ProjectRef = 61D5EF0F21FF4B1700CDFA4E /* CareKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				61D5EEEB21FF301400CDFA4E /* HelloCareKit */,
@@ -171,6 +257,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		61D5EF1621FF4B1700CDFA4E /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 61D5EF1521FF4B1700CDFA4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		61D5EF1821FF4B1700CDFA4E /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 61D5EF1721FF4B1700CDFA4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		61D5EF2021FF4B3000CDFA4E /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 61D5EF1F21FF4B3000CDFA4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		61D5EF2221FF4B3000CDFA4E /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 61D5EF2121FF4B3000CDFA4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		61D5EEEA21FF301400CDFA4E /* Resources */ = {
@@ -197,8 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61D5EEF221FF301400CDFA4E /* ViewController.swift in Sources */,
 				61D5EEF021FF301400CDFA4E /* AppDelegate.swift in Sources */,
+				61D5EF4921FF764D00CDFA4E /* TabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +334,11 @@
 			isa = PBXTargetDependency;
 			target = 61D5EEEB21FF301400CDFA4E /* HelloCareKit */;
 			targetProxy = 61D5EF0121FF301500CDFA4E /* PBXContainerItemProxy */;
+		};
+		61D5EF2621FF4B3A00CDFA4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CareKit;
+			targetProxy = 61D5EF2521FF4B3A00CDFA4E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
